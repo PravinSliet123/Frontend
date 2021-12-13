@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "raleway-regular";
+    src: url(./fonts/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: "raleway-medium";
+    src: url(./fonts/Raleway-Medium.ttf);
+}
+@font-face {
+    font-family: "raleway-bold";
+    src: url(./fonts/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: "raleway-semibold";
+    src: url(./fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family: "raleway-black";
+    src: url(./fonts/Raleway-Black.ttf);
+}
+@font-face {
+    font-family: "raleway-extrabold";
+    src: url(./fonts/Raleway-ExtraBold.ttf);
+}
+
+/* colors */
+:root{
+    --primary:#EEBF00;
+    --secondary:#232B38;
+    --ternery:#6C6C6C;
+    --danger:#FE4545;
+    --pure:#FEFEFE;
+    --light:#F0F0F0;
+    --heaven:#FFFFFF;
+    --footer:#2D333F;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    --webkit-font-smoothing:antialised;
+    height: 120vh;
+    font-family: "raleway-regular";
+    background-image: url(./images/salad-table.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.container{
+    width: 100%;
+    padding: 0 15px;
+    margin:0 auto;
+}
+
+
+@media(min-width:576px)
+{
+    .container{
+        max-width: 540px;
+        
+    }
+}
+@media(min-width:768px)
+{
+    .container{
+        max-width: 720px;
+        
+    }
+}
+@media(min-width:992px)
+{
+    .container{
+        max-width: 960px;
+        
+    }
+}
+@media(min-width:1200px)
+{
+    .container{
+        max-width: 1152px;
+        
+    }
+}
+
+header.topbar{
+     background:var(--secondary);
+     color: var(--pure);
+     font-family:"raleway-semibold";
+     padding:  0.25rem 0;
+     position: sticky;
+}
+header.topbar .auth > div a{
+    color:var(--pure);
+    text-decoration: none;
+}
+header.topbar .icon a{
+    margin-right: 0.6rem;
+}
+header.topbar .auth .divider{
+    padding: 0 1rem;
+}
+header.topbar .container .auth{
+    display: flex;
+}
+.felx{
+    display: flex;
+}
+.justyfy-between{
+    justify-content: space-between;
+}
+.items-centre{
+    align-items: center;
+}
+nav .top{
+    padding:  1.5rem 0;
+    background: var(--pure);
+}
+nav .top .contact h5, nav .top .time h5{
+    font-family: "raleway-black";
+    margin-bottom: 00.25rem;
+}
+nav .top .contact h6, nav .top .time h6{
+    font-family: "raleway-medium";
+    letter-spacing:0.055rem ;
+    font-size: 0.75rem;
+    color: var(--ternery);
+}
+nav .top .contact img{
+    margin-right: 1rem;
+}
+nav .top .time img{
+    margin-right: 1rem;
+}
+.justify-centre{
+    justify-content: center;
+}
+nav .navbar a{
+    text-decoration: none;
+    color: var(--secondary);
+    font-family: "raleway-semibold";
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    transition:all .3s ease;
+}
+nav .navbar img{
+    margin-left: 3px;
+    margin-bottom: -3px;
+}
+nav .navbar a.Active{
+    background:var(--primary);
+    color: var(--pure);
+}
+nav .navbar a:hover{
+    background: var(--primary);
+    color: var(--pure);
+}
+.magic-shadow{
+    position: relative;
+    background:var(--heaven);
+
+}
+.magic-shadow:after{
+    
+    content: '';
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image:url(../icons/shadow.svg);
+    position: absolute;
+    background-position:center;
+    bottom: -22px;
+    background-repeat: no-repeat;
+    z-index: -1;
+    
+}
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    background: var(--pure);
+    margin: 6% auto;
+    padding: 5px;
+}
+.button-box{
+    width: 136px;
+    margin: 35px auto;
+    position:relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 33px;
+    cursor: pointer;
+    background: transparent;
+    border:0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top:-20px;
+    left: 20px;
+    position: absolute;
+    width: 110px;
+    background: linear-gradient(right,#ff105f,#ffad06);
+    border-radius: 30px;
+    transition: .5s;
+}
+.card-shadow:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+
+}
+
+

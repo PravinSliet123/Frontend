@@ -1,0 +1,545 @@
+/* FONTS*/
+@font-face {
+    font-family: "raleway-regular";
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: "raleway-medium";
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+@font-face {
+    font-family: "raleway-bold";
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: "raleway-semibold";
+    src: url(../fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family: "raleway-black";
+    src: url(../fonts/Raleway-Black.ttf);
+}
+@font-face {
+    font-family: "raleway-extrabold";
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+
+/* colors */
+:root{
+    --primary:#EEBF00;
+    --secondary:#232B38;
+    --ternery:#6C6C6C;
+    --danger:#FE4545;
+    --pure:#FEFEFE;
+    --light:#F0F0F0;
+    --heaven:#FFFFFF;
+    --footer:#2D333F;
+}
+/* Reste */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    --webkit-font-smoothing:antialised;
+    height: 4000px;
+    font-family: "raleway-regular";
+
+}
+
+.container{
+    width: 100%;
+    padding: 0 15px;
+    margin:0 auto;
+}
+
+
+@media(min-width:576px)
+{
+    .container{
+        max-width: 540px;
+        
+    }
+}
+@media(min-width:768px)
+{
+    .container{
+        max-width: 720px;
+        
+    }
+}
+@media(min-width:992px)
+{
+    .container{
+        max-width: 960px;
+        
+    }
+}
+@media(min-width:1200px)
+{
+    .container{
+        max-width: 1152px;
+        
+    }
+}
+
+header.topbar{
+     background:var(--secondary);
+     color: var(--pure);
+     font-family:"raleway-semibold";
+     padding:  0.25rem 0;
+}
+header.topbar .auth > div a{
+    color:var(--pure);
+    text-decoration: none;
+}
+header.topbar .icon a{
+    margin-right: 0.6rem;
+}
+header.topbar .auth .divider{
+    padding: 0 1rem;
+}
+header.topbar .container .auth{
+    display: flex;
+}
+.felx{
+    display: flex;
+}
+.justyfy-between{
+    justify-content: space-between;
+}
+.items-centre{
+    align-items: center;
+}
+nav .top{
+    padding:  1.5rem 0;
+}
+nav .top .contact h5, nav .top .time h5{
+    font-family: "raleway-black";
+    margin-bottom: 00.25rem;
+}
+nav .top .contact h6, nav .top .time h6{
+    font-family: "raleway-medium";
+    letter-spacing:0.055rem ;
+    font-size: 0.75rem;
+    color: var(--ternery);
+}
+nav .top .contact img{
+    margin-right: 1rem;
+}
+nav .top .time img{
+    margin-right: 1rem;
+}
+.justify-centre{
+    justify-content: center;
+}
+nav .navbar a{
+    text-decoration: none;
+    color: var(--secondary);
+    font-family: "raleway-semibold";
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    transition:all .3s ease;
+}
+nav .navbar a.Active{
+    background:var(--primary);
+    color: var(--pure);
+}
+nav .navbar a:hover{
+    background: var(--primary);
+    color: var(--pure);
+}
+.magic-shadow{
+    position: relative;
+    background:var(--heaven);
+
+}
+.magic-shadow:after{
+    
+    content: '';
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image:url(../icons/shadow.svg);
+    position: absolute;
+    background-position:center;
+    bottom: -22px;
+    background-repeat: no-repeat;
+    z-index: -1;
+    
+}
+header.hero{
+    height: 600px;
+    background-image: url(../images/hero.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+    
+  
+}
+header.hero .container{
+    position: relative;
+}
+header.hero .welcome span{
+    font-family: "raleway-bold";
+    color: var(--secondary);
+    margin-right: 0.75rem;
+    
+}
+header.hero h1{
+    font-family: "raleway-extrabold";
+    color: var(--secondary);
+    font-size: 2.5rem;
+    margin-bottom: .75rem;
+
+}
+header.hero h1 span{
+    color: var(--primary);
+}
+header.hero .welcome{
+    margin-bottom:  0.5rem;
+}
+header.hero p{
+    font-family: "raleway-medium";
+    width: 1.5;
+    margin-bottom: 1rem;
+}
+.btn{
+    padding: 0.75rem 0.75rem;
+    border-radius: 4px;
+    line-height: 0.8;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.btn-primary{
+    background: var(--primary);
+    color: var(-he);
+}
+.btn-primary:hover{
+    background: var(--heaven);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.btn-secondary{
+    background: var(--secondary);
+    color: var(--heaven);
+}
+.btn-secondary:hover{
+    background: var(--heaven);
+    color: var(--secondary);
+    border:  1px solid var(--secondary);
+}
+header.hero button:first-child{
+    margin-right: 0.50rem;
+}
+header.hero .hero-image{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+section{
+    padding:4rem 0;
+}
+section.top-products{
+    background: var(--light);
+}
+.section-heading{
+    font-family: "raleway-bold";
+    text-align: center;
+    position: relative;
+    margin-bottom: 6rem;
+}
+.section-heading:after{
+    content: '';
+    display:block;
+    width:100%;
+    height:30px;
+    background-image: url(../icons/hr.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -40px;
+}
+section.top-products .food-slider .food-card{
+    background: var(--heaven);
+    padding: 1.5rem 0;
+    border-radius: 4px;
+}
+section.top-products .food-slider .food-card .product-image img{
+    width: 80%;
+    height:200px;
+    object-fit:contain;
+    padding-bottom:1rem;
+}
+hr{
+    border: 1px solid var(--light);
+    opacity:0.8;
+    margin: 1rem 0;
+}
+
+section.top-products .food-slider .food-card h2{
+    font-family: "raleway-bold";
+}
+
+.text-centre{
+    text-align: center;
+}
+section.top-products .food-slider .food-card .stars{
+    margin-bottom: 0.5rem;
+}
+section.top-products .food-slider .food-card .stars img{
+    margin-right: 00.25rem;
+
+}
+section.top-products .food-slider .food-card .price{
+    font-family: "raleway-medium";
+    color: var(--danger);
+    margin-bottom: 1rem;
+}
+section.top-products .food-slider .food-card button{
+    font-family: "raleway-medium";
+    color: var(--secondary);
+    background: var(--heaven);
+    border:2px solid var(--primary);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s ease;
+
+
+}
+section.top-products .food-slider .food-card button:hover{
+    background: var(--primary);
+    color: var(--heaven);
+}
+.food-slider .food-card button img{
+ background: var(--primary);
+ padding: 0.50rem;
+ height: 32px;
+ margin-right: 1.2rem;
+}
+.slick-slide{
+    margin:  0 27px;
+
+}
+.slick-list{
+    margin: 0 -27px;
+}
+.top-products .slider-btn{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: var(--primary);
+    cursor: pointer;
+    outline: none;
+}
+.prev-btn{
+    position:absolute;
+    top: 46%;
+    left: -3rem;
+    z-index: 1;
+}
+.top-products .slider{
+    position:relative;
+}
+.next-btn{
+    position:absolute;
+    top: 46%;
+    right: -3rem;
+    z-index: 1;
+}
+.top-products .btn-wrapper{
+    margin: 2rem;
+}
+.magic-shadow-sm{
+    position: relative;
+    background:var(--heaven);
+
+}
+.magic-shadow-sm:after{
+    
+    content: '';
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image:url(../icons/shadow-sm.svg);
+    position: absolute;
+    background-position:center;
+    bottom: -20px;
+    background-repeat: no-repeat;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  
+    
+}
+.slick-track{
+    padding: 1rem 0;
+
+}
+section.about-meal img{
+    width: 80% ;
+    margin-left: 10%;
+}
+.flex-1{
+    flex: 1;
+}
+section.about-meal h2{
+    font-family: "raleway-bold";
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+}
+section.about-meal p{
+    line-height: 1.7;
+    margin-bottom: 2.3rem;
+
+}
+section.our-Services{
+    background: var(--light);
+    position: relative;
+    z-index: 0;
+}
+section.our-Services .service-card{
+    background: var(--pure);
+    text-align: center;
+    padding: 2rem;
+    padding-top: 4rem;
+    position: relative;
+    border-radius: 4px;
+    margin-right: 2rem;
+}
+section.our-Services .card-wraper{
+    margin-right: -2rem;
+    margin-top: 8rem;
+}
+section.our-Services .service-card .icon{
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform:translateX(-50%);
+    bottom: 30px;
+    
+}
+section.our-Services .service-card h2{
+    font-family: "raleway-bold";
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+section.our-Services .service-card p{
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.text-primary{
+    color: var(--primary);
+}
+section.deals-of-week{
+    background-image: linear-gradient(
+        rgba(35,43,56,0.9),
+        rgba(35,43,56,0.9)
+        
+    ), url(../images/food-table.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+
+    /* background-image: var(--ternery); */
+}
+section.deals-of-week h1{
+    color: var(--pure);
+}
+section.deals-of-week .time{
+    background-color: var(--primary);
+    margin-bottom: 1rem;
+}
+section.deals-of-week .time h2{
+    color: var(--pure);
+    margin:  1rem 2rem;
+    margin-bottom: .2rem;
+}
+section.deals-of-week .time p{
+    color: var(--pure);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+section.deals-of-week .date-time .time{
+    margin-right: 2rem;
+    border-radius: 4px;
+}
+section.date-time{
+    margin: -1rem;
+}
+section .right-block-image img{
+    height: 200px;
+    
+}
+section .news-wraper .right-block-image{
+    background-color: yellow;
+    margin-right: 5rem;
+}
+section .news-wraper .left-block{
+    margin-right: 5rem;
+    background-color: var(--secondary);
+}
+section .news-wraper{
+   margin: 300px 200px;
+   margin-top: 3rem;
+}
+section .news-wraper .left-block img{
+    height: 200px;
+}
+.submmenuofproduct{
+    display: none;
+    border: 2px solid var(--primary);
+    border-radius: 6px;
+    font-family: "raleway-medium";
+}
+.submmenuofproduct ul li{
+   
+   list-style: none; color: var(--footer);
+    margin-bottom: 5px;
+    border-bottom: 2px solid var(--pure);
+}
+.submmenuofproduct ul li:last-child{
+    border-bottom: none;
+}
+.submmenuofproduct ul{
+    padding: 10px 20px ;
+    margin-bottom: 5px;
+   
+}
+.hover-product:hover .submmenuofproduct{
+    display: block;
+    position: absolute;
+    margin-top:16px;
+    margin-left:90px;
+    background:var(--primary);
+    
+}
+.hover-product img{
+    margin-left:2px;
+    margin-bottom: -3px;
+}
+.hover-product:hover .submmenuofproduct ul li:hover{
+    color: var(--pure);
+    border-bottom: 2px solid var(--pure);
+}
+.hover-product:hover .submmenuofproduct ul li:hover:last-child{
+    border-bottom: none;
+}
+.card-shadow:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+
+}
